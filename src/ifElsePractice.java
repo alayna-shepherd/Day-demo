@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class ifElsePractice {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("please enter a neumeric grade: ");
+
+		int grade = scan.nextInt();
+
+		if (grade <= 100 && grade >= 0) {
+
+			if (grade >= 85) {
+				System.out.println("A");
+			} else if (grade >= 70) {
+				System.out.println("B");
+			} else if (grade >= 60) {
+				System.out.println("C");
+			} else if (grade >= 50) {
+				System.out.println("D");
+			} else {
+				System.out.println("F");
+			}
+
+		} else {
+			System.out.println("The number is not in a valid rage of 0 - 100");
+		}
+		System.out.println("goodbye!");
+		// this should be the end of my program
+		scan.close();
+	}
+
+}
